@@ -99,7 +99,7 @@ function ImageUploader($parent, options) {
 				//限制上传图片数量
 				if (context.$uploadBtn.siblings("." + context.config.prevClass).length >= context.config.limitNum) {
 					context.$fileInput.val("");
-					alert("最多可上传: " + i.config.limitNum + "张")
+					alert("最多可上传: " + context.config.limitNum + "张")
 					return;
 				}
 				context.config.beforeComplete.call(context);
